@@ -11,32 +11,21 @@
 body {
   font-family: 'Noto Sans JP', sans-serif;
   margin: 0;
-  background: #ffffff;
+  background: #fff;
   color: #333;
 }
 
-/* ===== ヒーロー ===== */
+/* ヒーロー */
 .hero {
-  position: relative;
+  background: #1E5BB8;
   color: white;
   text-align: center;
-  padding: 100px 20px;
-  overflow: hidden;
+  padding: 40px 20px;
 }
 
-.hero::before{
-  content:"";
-  position:absolute;
-  top:0;left:0;
-  width:100%;height:100%;
-  background:url("IMG_3804.png") center/cover;
-  filter:brightness(0.4);
-  z-index:0;
-}
-
-.hero-content{
-  position:relative;
-  z-index:1;
+.hero img {
+  width: 120px;
+  margin-bottom: 20px;
 }
 
 .btn {
@@ -50,161 +39,99 @@ body {
   border-radius: 5px;
 }
 
-/* ===== セクション ===== */
+/* セクション */
 section {
-  padding: 50px 20px;
-  max-width: 900px;
+  padding: 40px 20px;
+  max-width: 800px;
   margin: auto;
 }
 
-h1, h2 {
+h2 {
   text-align: center;
 }
 
-/* ===== BOX ===== */
+/* 画像 */
+.img-box img {
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+/* カード */
 .box {
   background: #f5f5f5;
   padding: 20px;
   margin: 20px 0;
-  border-radius:10px;
-}
-
-/* ===== スライダー ===== */
-.slider-wrap{
-  overflow:hidden;
-}
-
-.slider{
-  display:flex;
-  animation:slide 20s linear infinite;
-}
-
-.slider img{
-  width:300px;
-  margin-right:10px;
-  border-radius:10px;
-}
-
-@keyframes slide{
-  0%{transform:translateX(0);}
-  100%{transform:translateX(-50%);}
-}
-
-/* ===== プロフィール ===== */
-.profile{
-  text-align:center;
-}
-
-.profile img{
-  width:180px;
-  border-radius:50%;
-  margin-bottom:20px;
+  border-radius: 10px;
 }
 </style>
+
 </head>
 
 <body>
 
 <!-- ヒーロー -->
 <div class="hero">
-<div class="hero-content">
+  <img src="C6AED9BF-3806-40B2-A8B7-C1C46A99223C.png">
   <h1>引退世代のお金の学校</h1>
   <p>くらしとお金サロン</p>
-  <a href="https://lin.ee/yxZwj10" class="btn">LINEで無料体験予約</a>
-  <p style="margin-top:10px;color:#FFD700;">
-  ※少人数のため先着順です
-  </p>
+  <a href="https://lin.ee/uajUAFKE" class="btn">LINEで無料体験予約</a>
 </div>
-</div>
-
-<!-- スライダー -->
-<section>
-<div class="slider-wrap">
-<div class="slider">
-  <img src="IMG_2124.png">
-  <img src="IMG_3616.png">
-  <img src="6648FF22-7681-4F3D-8A69-FF57A9D10207.png">
-  <img src="480EA703-74CE-4342-9595-AB8F5ABDD83D.png">
-
-  <!-- ループ用 -->
-  <img src="IMG_2124.png">
-  <img src="IMG_3616.png">
-</div>
-</div>
-</section>
 
 <!-- 悩み -->
 <section>
 <h2>このようなお悩みありませんか？</h2>
 <div class="box">
+<p>
 ・老後資金が不安<br>
 ・何をすればいいか分からない<br>
-・新NISAがよく分からない<br>
 ・銀行に預けたままでいいのか不安<br>
-・詐欺が怖い
+・詐欺が怖い<br>
+</p>
 </div>
 </section>
 
-<!-- 体験 -->
+<!-- 講義風景 -->
 <section>
-<h2>無料体験会について</h2>
-<p>
-お金の知識を学びながら、<br>
-今の状況を整理する時間です。<br><br>
+<h2>講義の様子</h2>
+<div class="img-box">
+<img src="6648FF22-7681-4F3D-8A69-FF57A9D10207.png">
+</div>
+</section>
 
-※金融商品の販売・勧誘は一切ありません
-</p>
+<!-- 相談風景 -->
+<section>
+<h2>個別相談イメージ</h2>
+<div class="img-box">
+<img src="89804053-68C8-4E48-A98F-6E56CD01A26C.png">
+</div>
 </section>
 
 <!-- 内容 -->
 <section>
 <h2>内容</h2>
-<p>
+<div class="box">
 前半：約60分（講義）<br>
 後半：約60分（質問・交流）
-</p>
-</section>
-
-<!-- 特徴 -->
-<section>
-<h2>サロンの特徴</h2>
-<div class="box">
-・少人数制<br>
-・地域コミュニティ<br>
-・いつでも相談できる環境
 </div>
 </section>
 
-<!-- 料金 -->
-<section>
-<h2>料金</h2>
-<p style="text-align:center;font-size:22px;">
-月額 22,000円（税込）
-</p>
-</section>
-
 <!-- プロフィール -->
-<section class="profile">
+<section>
 <h2>講師プロフィール</h2>
-
-<img src="IMG_3616.png">
-
-<p>
-飲食業15年<br>
-最大200店舗・6,000名規模を担当<br><br>
-
-現在はFP資格を取得し<br>
-地域で金融教育サロンを運営
+<div class="img-box">
+<img src="94727A86-EF5F-4D8E-AF76-D566E9F08998.png">
+</div>
+<p style="text-align:center; margin-top:20px;">
+飲食業15年。最大200店舗のエリアを担当。<br>
+6,000名以上と関わる。<br><br>
+現在は金融教育サロンを運営。
 </p>
 </section>
 
 <!-- CTA -->
 <section style="text-align:center;">
-<h2>まずは一度、体験してみてください</h2>
-
-<a href="https://lin.ee/yxZwj10" class="btn">
-LINEで無料体験予約
-</a>
+<a href="https://lin.ee/uajUAFKE" class="btn">LINEで無料体験予約</a>
 </section>
 
 </body>
